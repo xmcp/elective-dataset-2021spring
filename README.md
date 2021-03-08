@@ -14,7 +14,7 @@ Baseline模型和上下游相关工具采用 [MIT License](https://mit-license.o
 
 - `dataset/manual`：
   人工标注的带标签验证码GIF数据集，标签经过了elective验证因此都是正确的。共5471张。
-- `dataset/auto-corr`、`dataset/auto-fail-tagged`
+- `dataset/auto-corr`、`dataset/auto-fail-tagged`：
   模型自动标注的带标签验证码GIF数据集，其中 `auto-corr` 是识别正确（通过了elective验证）的部分，`auto-fail-tagged` 是识别错误然后手工重新标注的部分（此部分不保证正确性）。共22931（正确）+936（错误）张。
 
 使用时请注意，由于 [GitHub 的限制](https://docs.github.com/en/github/managing-large-files/what-is-my-disk-quota)：
@@ -27,7 +27,7 @@ Baseline模型和上下游相关工具采用 [MIT License](https://mit-license.o
 
 ## Baseline 模型
 
-`baseline/` 目录包含一个Baseline验证码识别模型。
+`baseline/` 目录包含一个简易的验证码识别模型。
 
 此模型进行了提取关键帧、基于OpenCV的图像增强以及基于CNN的分类器等一系列工作以完成识别。
 
@@ -35,7 +35,7 @@ Baseline模型和上下游相关工具采用 [MIT License](https://mit-license.o
 
 用大约一万张图片训练好的 `checkpoints/model_29.pth` 能达到 98.4% 的整体精确度。
 
-`predict_bootstrap.py` 在elective系统上测试当前模型，将检验正确的数据放入 `bootstrap_img_succ` 目录，错误的数据放入 `bootstrap_img_fail` 目录。
+`predict_bootstrap.py` 在elective系统上测试当前模型，将检验正确的带标签图片放入 `bootstrap_img_succ` 目录，错误的图片放入 `bootstrap_img_fail` 目录。
 
 
 
