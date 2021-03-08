@@ -1,0 +1,5 @@
+pillow
+flask
+flask-compress
+requests
+numpy

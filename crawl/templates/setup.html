@@ -1,0 +1,26 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>验证码众包标注</title>
+</head>
+<body>
+    <h2>欢迎！请填写选课网的学号和 Cookie 信息来开始标注：</h2>
+    <form action="{{ url_for('update_cookie')}}" method="post" enctype="application/x-www-form-urlencoded">
+        <p>
+            <input name="xh" placeholder="学号">
+            <input name="cookie" placeholder="key=value; key=value...">
+            <button type="submit">提交</button>
+        </p>
+    </form>
+    <p>
+        登录选课网后打开控制台输入 <code>document.cookie</code> 可以得到自己的 Cookie，注意不要复制两端的引号。<hr>
+        需要填写你自己的 Cookie 是因为多人共享 Cookie 会导致冲突，无法确认验证码正确性。<br>
+        需要填写学号是因为获取验证码的请求需要。<br>
+        我们采用客户端会话（Client-Side Session）技术，上述信息仅储存在你的浏览器中。
+    </p>
+    <p>
+        <a href="{{ url_for('opensource') }}" target="_blank">开放源代码</a>
+    </p>
+</body>
+</html>

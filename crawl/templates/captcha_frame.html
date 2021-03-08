@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>验证码众包标注</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img src="{{ frame[3] | imgurl }}"></td>
+            <td><img src="{{ frame[3] | imgurl }}"></td>
+        </tr>
+        <tr>
+            <td><img src="{{ frame[7] | imgurl }}"></td>
+            <td><img src="{{ diff[0] | imgurl }}"></td>
+        </tr>
+        <tr>
+            <td><img src="{{ frame[11] | imgurl }}"></td>
+            <td><img src="{{ diff[1] | imgurl }}"></td>
+        </tr>
+        <tr>
+            <td><img src="{{ frame[15] | imgurl }}"></td>
+            <td><img src="{{ diff[2] | imgurl }}"></td>
+        </tr>
+    </table>
+    <style>
+        img {
+            height: 78px;
+        }
+    </style>
+</body>
+</html>
