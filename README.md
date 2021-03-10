@@ -62,5 +62,5 @@ Baseline模型和上下游相关工具采用 [MIT License](https://mit-license.o
 
 
 
-by *Elector Quartet* (按字典序 *@gzz, @Rabbit, @SpiritedAwayCN, **@xmcp***)
+by *Elector Quartet* (按字典序的倒序 ***@xmcp**, @SpiritedAwayCN, @Rabbit, @gzz*)
 
