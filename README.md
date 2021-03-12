@@ -60,7 +60,10 @@ Baseline模型和上下游相关工具采用 [MIT License](https://mit-license.o
 
 经过了更多的随意调参，模型的整体准确率可以达到98.4%。因为继续提升准确率意义不大，就没有继续优化。考虑到 PyTorch 安装比较麻烦，模型不易于部署到用户的设备上，我们实现了一个 HTTP API 可以用于云端识别。
 
+## 相关工作
 
+- [zhongxinghong/PKUElectiveCaptcha2021Spring](https://github.com/zhongxinghong/PKUElectiveCaptcha2021Spring)
+- [SpiritedAwayCN/ElectiveCaptCha](https://github.com/SpiritedAwayCN/ElectiveCaptCha)
 
 by *Elector Quartet* (按字典序的倒序 ***@xmcp**, @SpiritedAwayCN, @Rabbit, @gzz*)
 
